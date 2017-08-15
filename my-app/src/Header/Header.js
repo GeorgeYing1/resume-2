@@ -17,10 +17,6 @@ class Header extends React.Component {
 
      },
    }
-  constructor() {
-    super();
-  };
-
   render() {
     return (
     <div className="page-header">

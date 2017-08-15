@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Content from './Content/Content.js'
+//import Content from './Content/Content.js'
 import Header from './Header/Header.js'
 import Control from './Control/Control.js'
 import logo from './logo.svg';
@@ -14,7 +14,6 @@ class App extends Component {
           <h2>George (Jingya) learning React</h2>
         </div>
         <Header/>
-        <Content/>
         <Control/>
 
       </div>
