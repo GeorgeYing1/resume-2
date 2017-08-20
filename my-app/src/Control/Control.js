@@ -11,7 +11,7 @@ export default class Control extends Component {
     const { activeItem } = this.state
 
     return (
-    <div style={{marginTop: '200px'}}>
+    <div>
       <Grid>
         <Grid.Column width={4} style={{fontSize: '30px'}}>
           <Menu fluid vertical tabular='right'>
