@@ -3,7 +3,7 @@ import React from 'react';
 import gt from '../assets/images/gt.jpg'
 import nfls from '../assets/images/nfls.jpg'
 import qingliangshan from '../assets/images/qingliangshan.jpg'
-import { Card, Button, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 
 class Education extends React.Component {
   styles={
@@ -61,8 +61,6 @@ class Education extends React.Component {
               </Card.Content>
             </Card>
           </Card.Group>
-        Education
-
       </div>
     )
   }

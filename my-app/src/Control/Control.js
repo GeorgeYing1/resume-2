@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Grid, Menu, Segment } from 'semantic-ui-react'
+import { Grid, Menu} from 'semantic-ui-react'
 import Content from '../Content/Content.js'
 
 export default class Control extends Component {

@@ -71,21 +71,21 @@ class SocialMedia extends Component{
 
     return (
         <div>
-          <span className='mailhover' onMouseOver={(e) => this.handleMediaFocus(e,"mailhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"mailhover")}>
-            {this.state.mailhover? <img src={email_hover}/>: <img src={email}/>}
-          </span>
-          <span className='googlehover' onMouseOver={(e) => this.handleMediaFocus(e,"googlehover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"googlehover")}>
-            {this.state.googlehover? <img src={google_hover}/>: <img src={google}/>}
-          </span>
-          <span className='twitterhover' onMouseOver={(e) => this.handleMediaFocus(e,"twitterhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"twitterhover")}>
-            {this.state.twitterhover? <img src={twitter_hover}/>: <img src={twitter}/>}
-          </span>
-          <span className='facebookhover' onMouseOver={(e) => this.handleMediaFocus(e,"facebookhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"facebookhover")}>
-            {this.state.facebookhover? <img src={facebook_hover}/>: <img src={facebook}/>}
-          </span>
-          <span className='linkedinhover' onMouseOver={(e) => this.handleMediaFocus(e,"linkedinhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"linkedinhover")}>
-            {this.state.linkedinhover? <img src={linkedin_hover}/>: <img src={linkedin}/>}
-          </span>
+          <a className='mailhover' onMouseOver={(e) => this.handleMediaFocus(e,"mailhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"mailhover")} href="mailto:jingya,ying@gmail.com">
+            {this.state.mailhover? <img src={email_hover} alt=''/>: <img src={email} alt=''/>}
+          </a>
+          <a className='googlehover' onMouseOver={(e) => this.handleMediaFocus(e,"googlehover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"googlehover")} rel="noopener noreferrer" href="https://plus.google.com/u/0/103365991027997364834" target="_blank">
+            {this.state.googlehover? <img src={google_hover} alt=''/>: <img src={google} alt=''/>}
+          </a>
+          <a className='twitterhover' onMouseOver={(e) => this.handleMediaFocus(e,"twitterhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"twitterhover")} rel="noopener noreferrer" href="https://twitter.com/YingJingya" target="_blank">
+            {this.state.twitterhover? <img src={twitter_hover} alt=''/>: <img src={twitter} alt=''/>}
+          </a>
+          <a className='facebookhover' onMouseOver={(e) => this.handleMediaFocus(e,"facebookhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"facebookhover")} rel="noopener noreferrer" href="https://www.facebook.com/jingya.ying" target="_blank">
+            {this.state.facebookhover? <img src={facebook_hover} alt=''/>: <img src={facebook} alt=''/>}
+          </a>
+          <a className='linkedinhover' onMouseOver={(e) => this.handleMediaFocus(e,"linkedinhover")} onMouseLeave={(e) => this.handleMediaFocusOut(e,"linkedinhover")} rel="noopener noreferrer" href="https://www.linkedin.com/in/jingya-ying-1aa63864" target="_blank">
+            {this.state.linkedinhover? <img src={linkedin_hover} alt=''/>: <img src={linkedin} alt=''/>}
+          </a>
         </div>
 
     );
