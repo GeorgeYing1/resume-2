@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Icon, Card, Label, Image} from 'semantic-ui-react'
+import { Accordion, Icon, Card, Image} from 'semantic-ui-react'
 import modeling from '../assets/images/modeling.png'
 import chemistry from '../assets/images/chemistry_logo.png'
 import equations from '../assets/images/equations-logo.gif'

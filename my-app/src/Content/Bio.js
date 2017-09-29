@@ -1,7 +1,7 @@
 import React from 'react';
 // import Control from '../Control/Control.js'
-import { Container, Label, Header, List, Menu, Table, Icon } from 'semantic-ui-react'
-var updateLog= {};
+import { Label, List, Menu, Table, Icon } from 'semantic-ui-react'
+//var updateLog= {};
 class Bio extends React.Component {
 
   // handleItemClick = (e) => <Control >;
