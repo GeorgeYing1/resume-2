@@ -1,7 +1,19 @@
 import React from 'react';
-import { Accordion, Icon} from 'semantic-ui-react'
+import { Accordion, Icon, Card, Label, Image} from 'semantic-ui-react'
+import modeling from '../assets/images/modeling.png'
+import chemistry from '../assets/images/chemistry_logo.png'
+import equations from '../assets/images/equations-logo.gif'
+import frontend from '../assets/images/frontend.png'
+import backend from '../assets/images/backend.jpeg'
+import tools from '../assets/images/tools.png'
 
 class Skills extends React.Component {
+  styles={
+    logos: {
+      width: "200px",
+      height: "150px",
+    }
+  }
   render() {
     // let chemical_engineering = [{
     //   key: 'chemical_engineering',
@@ -23,18 +35,108 @@ class Skills extends React.Component {
               Chemical Engineering
             </Accordion.Title>
             <Accordion.Content>
-             placeholder
+              <Card.Group>
+                <Card>
+                  <Card.Content>
+                    <Image src={modeling} style={this.styles.logos}/>
+                    <Card.Header>
+                      Modeling
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                      Using Matlab/Python to build model and simulate lab result
+                    </Card.Meta>
+                    <Card.Description>
+                      placeholder
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Image src={chemistry} style={this.styles.logos}/>
+                    <Card.Header>
+                      Chemistry
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                      Organic, inorganic, lab skills etc
+                    </Card.Meta>
+                    <Card.Description>
+                      placeholder
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Image src={equations} style={this.styles.logos}/>
+                    <Card.Header>
+                      Equations
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                      Differential Equations to solve transfer, thermodynamics and kinetics problems
+                    </Card.Meta>
+                    <Card.Description>
+                      placeholder
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+              </Card.Group>
             </Accordion.Content>
             <Accordion.Title>
               <Icon name='dropdown' />
                 Programming
             </Accordion.Title>
             <Accordion.Content>
-              <p>
-                There are many breeds of dogs. Each breed varies in size and temperament.
-                {' '}Owners often select a breed of dog that they find to be compatible
-                with their own lifestyle and desires from a companion.
-              </p>
+              <Card.Group>
+                <Card>
+                  <Card.Content>
+                    <Image src={frontend} style={this.styles.logos}/>
+                    <Card.Header>
+                      Front End
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                    placeholder
+                    </Card.Meta>
+                    <Card.Description style={{fontFamily: 'Source Serif Pro serif'}}>
+                    HTML, CSS, Javascript and popular javascript libraries such as jquery, react etc
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Image src={backend} style={this.styles.logos}/>
+                    <Card.Header>
+                      Back End
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                    placeholder
+                    </Card.Meta>
+                    <Card.Description>
+                      database such as mysql and sql server and related knowledge such as SSIS, SSRS, web serivce and API
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+                <Card>
+                  <Card.Content>
+                    <Image src={tools} style={this.styles.logos}/>
+                    <Card.Header>
+                      Tools and Framework
+                    </Card.Header>
+                    <br/>
+                    <Card.Meta>
+                    placeholder
+                    </Card.Meta>
+                    <Card.Description>
+                      Version Control like: Git, SVN, TFS
+                      Agile Tools: VersionOne, Rally, Jira
+                      Ruby on Rails, Viusal Stuodio
+                    </Card.Description>
+                  </Card.Content>
+                </Card>
+              </Card.Group>
             </Accordion.Content>
             <Accordion.Title>
               <Icon name='dropdown' />
@@ -42,13 +144,8 @@ class Skills extends React.Component {
             </Accordion.Title>
             <Accordion.Content>
               <p>
-                Three common ways for a prospective owner to acquire a dog is from pet shops,
-                {' '}private owners, or shelters.
-              </p>
-              <p> A pet shop may be the most convenient way to buy a dog.
-                {' '}Buying a dog from a private owner allows you to assess the pedigree and
-                {' '}upbringing of your dog before choosing to take it home. Lastly, finding your dog
-                {' '}from a shelter, helps give a good home to a dog who may not find one so readily.
+                Lanuguages: Chinese (Native), English (Fluent), Japanese (Beginner)
+                Able to speak and write professionally and is a team-player
               </p>
             </Accordion.Content>
           </Accordion>

@@ -28,8 +28,8 @@ class Education extends React.Component {
               <Card.Description>
                 Let it be
               </Card.Description>
-              </Card.Content>
-            </Card>
+            </Card.Content>
+          </Card>
           <Card>
             <Card.Content>
               <Image src={nfls} style={this.styles.logos}/>
@@ -42,7 +42,7 @@ class Education extends React.Component {
               <Card.Description>
                 Best school in the city possibly best in the China
               </Card.Description>
-              </Card.Content>
+            </Card.Content>
           </Card>
           <Card>
             <Card.Content>
@@ -58,9 +58,9 @@ class Education extends React.Component {
                 <br/>
                 <strong>Nah, MIT is GT in the North</strong>
               </Card.Description>
-              </Card.Content>
-            </Card>
-          </Card.Group>
+            </Card.Content>
+          </Card>
+        </Card.Group>
       </div>
     )
   }
