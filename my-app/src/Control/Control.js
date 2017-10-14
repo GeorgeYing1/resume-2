@@ -3,10 +3,10 @@ import { Grid, Menu} from 'semantic-ui-react'
 import Content from '../Content/Content.js'
 
 export default class Control extends Component {
-  state = { activeItem: 'Bio' }
+  state = { activeItem: '' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-
+  constructionClick= () => {this.setState({ activeItem: 'Bio'})}
   render() {
     const { activeItem } = this.state
 
@@ -25,7 +25,7 @@ export default class Control extends Component {
           </Menu>
         </Grid.Column>
         <Grid.Column stretched width={12}>
-          <Content subjectTopic={this.state.activeItem}/>
+          <Content subjectTopic={this.state.activeItem} constructionClick={this.constructionClick}/>
         </Grid.Column>
       </Grid>
     </div>

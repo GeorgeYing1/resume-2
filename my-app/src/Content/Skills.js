@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Icon, Card, Image} from 'semantic-ui-react'
+import { Accordion, Icon, Card, Image, Modal, Header, Button} from 'semantic-ui-react'
 import modeling from '../assets/images/modeling.png'
 import chemistry from '../assets/images/chemistry_logo.png'
 import equations from '../assets/images/equations-logo.gif'
@@ -8,6 +8,9 @@ import backend from '../assets/images/backend.jpeg'
 import tools from '../assets/images/tools.png'
 
 class Skills extends React.Component {
+  state = { ModelingOpen: false, ChemistryOpen: false ,EquationsOpen: false, FrontendOpen: false, BackendOpen: false, ToolsOpen: false }
+  close = () => this.setState({ ModelingOpen: false, ChemistryOpen: false ,EquationsOpen: false, FrontendOpen: false, BackendOpen: false, ToolsOpen: false })
+  handleCardClick = (e, { name }) => this.setState({ [name]: true })
   styles={
     logos: {
       width: "200px",
@@ -27,7 +30,7 @@ class Skills extends React.Component {
     // }];
     return (
       <div>
-        <div style={{height: "128px"}}>
+        <div style={{height: "108px"}}>
         </div>
         <Accordion fluid styled style={{textAlign: "left", fontSize: "24px"}}>
             <Accordion.Title>
@@ -36,7 +39,7 @@ class Skills extends React.Component {
             </Accordion.Title>
             <Accordion.Content>
               <Card.Group>
-                <Card>
+                <Card name='ModelingOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={modeling} style={this.styles.logos}/>
                     <Card.Header>
@@ -51,7 +54,7 @@ class Skills extends React.Component {
                     </Card.Description>
                   </Card.Content>
                 </Card>
-                <Card>
+                <Card name='ChemistryOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={chemistry} style={this.styles.logos}/>
                     <Card.Header>
@@ -66,7 +69,7 @@ class Skills extends React.Component {
                     </Card.Description>
                   </Card.Content>
                 </Card>
-                <Card>
+                <Card name='EquationsOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={equations} style={this.styles.logos}/>
                     <Card.Header>
@@ -89,7 +92,7 @@ class Skills extends React.Component {
             </Accordion.Title>
             <Accordion.Content>
               <Card.Group>
-                <Card>
+                <Card name='FrontendOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={frontend} style={this.styles.logos}/>
                     <Card.Header>
@@ -104,7 +107,7 @@ class Skills extends React.Component {
                     </Card.Description>
                   </Card.Content>
                 </Card>
-                <Card>
+                <Card name='BackendOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={backend} style={this.styles.logos}/>
                     <Card.Header>
@@ -119,7 +122,7 @@ class Skills extends React.Component {
                     </Card.Description>
                   </Card.Content>
                 </Card>
-                <Card>
+                <Card name='ToolsOpen' onClick={this.handleCardClick}>
                   <Card.Content>
                     <Image src={tools} style={this.styles.logos}/>
                     <Card.Header>
@@ -149,7 +152,108 @@ class Skills extends React.Component {
               </p>
             </Accordion.Content>
           </Accordion>
-
+          <Modal open={this.state.ModelingOpen} onClose={this.close}>
+            <Modal.Header>Place holder for modeling</Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
+          <Modal open={this.state.ChemistryOpen} onClose={this.close}>
+            <Modal.Header> Place holder for Chemistry </Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
+          <Modal open={this.state.EquationsOpen} onClose={this.close}>
+            <Modal.Header>Place holder for equations</Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
+          <Modal open={this.state.FrontendOpen} onClose={this.close}>
+            <Modal.Header>Place holder for FrontEnd</Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
+          <Modal open={this.state.BackendOpen} onClose={this.close}>
+            <Modal.Header> Place holder for backend </Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
+          <Modal open={this.state.ToolsOpen} onClose={this.close}>
+            <Modal.Header>Place holder for Tools</Modal.Header>
+            <Modal.Content image>
+              <Image wrapped size='medium' src='/assets/images/avatar/large/rachel.png' />
+              <Modal.Description>
+                <Header>Default Profile Image</Header>
+                <p>We've found the following gravatar image associated with your e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+              </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+              <Button color='black' onClick={this.close}>
+                Nope
+              </Button>
+              <Button positive icon='checkmark' labelPosition='right' content="Yep, that's me" onClick={this.close} />
+            </Modal.Actions>
+          </Modal>
       </div>
     )
   }

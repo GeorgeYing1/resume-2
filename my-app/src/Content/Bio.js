@@ -23,8 +23,8 @@ class Bio extends React.Component {
 
     return (
       <div>
-        <h3>This site serves both as a E-version of CV and a self-practice of bulding a pure front-end website</h3>
-        <h3>TimeLine</h3>
+        {/* <h3>This site serves both as a E-version of CV and a self-practice of bulding a pure front-end website</h3>
+        <h3>TimeLine</h3> */}
         {/* Todo: generate table with Json */}
         <Table celled>
           <Table.Header>
@@ -40,8 +40,13 @@ class Bio extends React.Component {
              <Table.Cell>
                <Label ribbon> Latest</Label>
              </Table.Cell>
-             <Table.Cell> Adding content to content</Table.Cell>
-             <Table.Cell> Not involving modal/javascript link yet</Table.Cell>
+             <Table.Cell> Adding Modal, considering data-flow and generating html using functions</Table.Cell>
+             <Table.Cell> Will cleaning up some comments/notes</Table.Cell>
+           </Table.Row>
+           <Table.Row>
+             <Table.Cell>Sept 29 2017</Table.Cell>
+             <Table.Cell> Change name, adding content to each content</Table.Cell>
+             <Table.Cell> Mostly static html thing.</Table.Cell>
            </Table.Row>
            <Table.Row>
              <Table.Cell>Sept 1 2017</Table.Cell>
@@ -72,14 +77,14 @@ class Bio extends React.Component {
         </Table>
 
 
-        {/* {tableBody} */}
+        {/* {tableBody} generate list if necessary */}
 
         <List style={{fontSize: '16px'}}>
           <List.Item width={8}>
             <List.Icon name='user'/>
             <List.Content>
-              <List.Header style={{textAlign: 'left'}}> George knows everything a bit and loves to embracing new ideas</List.Header>
-              <List.Description>He is currently doing a software programmer job so he creates this website as a playground</List.Description>
+              <List.Header style={{textAlign: 'left'}}> George builds this website to test his knowledge and share some thoughts</List.Header>
+              <List.Description>He is currently a software engineer</List.Description>
             </List.Content>
           </List.Item>
           <List.Item>

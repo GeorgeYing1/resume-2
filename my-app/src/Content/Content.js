@@ -6,11 +6,14 @@ import Skills from './Skills.js'
 import Hobbies from './Hobbies.js'
 import Voluntaries from './Voluntaries.js'
 import Contacts from './Contacts.js'
+import { Image } from 'semantic-ui-react'
+import UnderConstruction from '../assets/images/under-construction.jpg';
 
 class Content extends React.Component {
 
+
   render() {
-    let lowerPart = <span>Will be replaced soon</span>;
+    let lowerPart;
     switch (this.props.subjectTopic) {
       case "Bio":
         lowerPart = <Bio/>;
@@ -34,12 +37,12 @@ class Content extends React.Component {
         lowerPart = <Contacts/>;
         break;
       default:
-        lowerPart = <span>Will be replaced soon</span>;
+        lowerPart = <Image style={{width: '90%', padding: '20px 0 20px 0'}} src={UnderConstruction} onClick={this.props.constructionClick}/>;
         break;
     }
 
     return (
-      <div>
+      <div style={{paddingTop: '20px'}}>
       {lowerPart}
     </div>
     )
