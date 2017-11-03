@@ -18,16 +18,6 @@ class Skills extends React.Component {
     }
   }
   render() {
-    // let chemical_engineering = [{
-    //   key: 'chemical_engineering',
-    //   title: <Label color='red' content="titlehi" />,
-    //   content: (
-    //   <Message
-    //       info
-    //       header="headerhi"
-    //       content="contenthi"
-    //   />)
-    // }];
     return (
       <div>
         <div style={{height: "108px"}}>
@@ -152,6 +142,7 @@ class Skills extends React.Component {
               </p>
             </Accordion.Content>
           </Accordion>
+          {/* Next is Modal Listing */}
           <Modal open={this.state.ModelingOpen} onClose={this.close}>
             <Modal.Header>Place holder for modeling</Modal.Header>
             <Modal.Content image>
