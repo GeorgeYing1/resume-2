@@ -14,7 +14,7 @@ export default class Control extends Component {
     <div>
       <Grid>
         <Grid.Column width={4} style={{fontSize: '30px'}}>
-          <Menu fluid vertical tabular='right'>
+          <Menu fluid vertical tabular='right' style={{minWidth: '100px'}}>
             <Menu.Item name='Bio' active={activeItem === 'Bio'} onClick={this.handleItemClick} />
             <Menu.Item name='Education' active={activeItem === 'Education'} onClick={this.handleItemClick} />
             <Menu.Item name='Work' active={activeItem === 'Work'} onClick={this.handleItemClick} />
@@ -22,6 +22,7 @@ export default class Control extends Component {
             <Menu.Item name='Hobbies' active={activeItem === 'Hobbies'} onClick={this.handleItemClick} />
             <Menu.Item name='Voluntaries' active={activeItem === 'Voluntaries'} onClick={this.handleItemClick} />
             <Menu.Item name='Contacts' active={activeItem === 'Contacts'} onClick={this.handleItemClick} />
+            <Menu.Item name='Games' active={activeItem === 'Games'} onClick={this.handleItemClick} />
           </Menu>
         </Grid.Column>
         <Grid.Column stretched width={12}>

@@ -36,12 +36,17 @@ class Bio extends React.Component {
           </Table.Header>
 
         <Table.Body>
+          <Table.Row>
+            <Table.Cell>
+              <Label ribbon> Latest</Label>
+            </Table.Cell>
+            <Table.Cell> Continue Adding Modal and consider modify several sections' logic</Table.Cell>
+            <Table.Cell> For Education, do I need to list papers/clubs/other related thing and/or provide links?</Table.Cell>
+          </Table.Row>
            <Table.Row>
-             <Table.Cell>
-               <Label ribbon> Latest</Label>
-             </Table.Cell>
-             <Table.Cell> Adding Modal, considering data-flow and generating html using functions</Table.Cell>
-             <Table.Cell> Will cleaning up some comments/notes</Table.Cell>
+             <Table.Cell>Nov 3 2017</Table.Cell>
+             <Table.Cell> Finished 'Education' and 'Work' Modal and the rest modals added</Table.Cell>
+             <Table.Cell> Still thinking about new sections 'Games' and footer</Table.Cell>
            </Table.Row>
            <Table.Row>
              <Table.Cell>Sept 29 2017</Table.Cell>

@@ -6,6 +6,7 @@ import Skills from './Skills.js'
 import Hobbies from './Hobbies.js'
 import Voluntaries from './Voluntaries.js'
 import Contacts from './Contacts.js'
+import Games from './Games.js'
 import { Image } from 'semantic-ui-react'
 import UnderConstruction from '../assets/images/under-construction.jpg';
 
@@ -35,6 +36,9 @@ class Content extends React.Component {
         break;
       case "Contacts":
         lowerPart = <Contacts/>;
+        break;
+      case "Games":
+        lowerPart = <Games/>;
         break;
       default:
         lowerPart = <Image style={{width: '90%', padding: '20px 0 20px 0'}} src={UnderConstruction} onClick={this.props.constructionClick}/>;
