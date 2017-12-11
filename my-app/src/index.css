@@ -3,3 +3,45 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+body .ui.card {
+  background-size: contain;
+}
+body .ui.card>.content._1 {
+  background-image: url("./assets/images/png/ace_of_hearts.png");
+}
+body .ui.card>.content._2 {
+  background-image: url("./assets/images/png/2_of_hearts.png");
+}
+body .ui.card>.content._3 {
+  background-image: url("./assets/images/png/3_of_hearts.png");
+}
+body .ui.card>.content._4 {
+  background-image: url("./assets/images/png/4_of_hearts.png");
+}
+body .ui.card>.content._5 {
+  background-image: url("./assets/images/png/5_of_hearts.png");
+}
+body .ui.card>.content._6 {
+  background-image: url("./assets/images/png/6_of_hearts.png");
+}
+body .ui.card>.content._7 {
+  background-image: url("./assets/images/png/7_of_hearts.png");
+}
+body .ui.card>.content._8 {
+  background-image: url("./assets/images/png/8_of_hearts.png");
+}
+body .ui.card>.content._9 {
+  background-image: url("./assets/images/png/9_of_hearts.png");
+}
+body .ui.card>.content._10 {
+  background-image: url("./assets/images/png/10_of_hearts.png");
+}
+body .ui.card>.content._11 {
+  background-image: url("./assets/images/png/jack_of_hearts.png");
+}
+body .ui.card>.content._12 {
+  background-image: url("./assets/images/png/queen_of_hearts.png");
+}
+body .ui.card>.content._13 {
+  background-image: url("./assets/images/png/king_of_hearts.png");
+}
